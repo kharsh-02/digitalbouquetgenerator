@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Digital Bouquet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Build Your Digital Bouquet</h1>
+        <div class="builder">
+            <div class="controls">
+                <label for="flower-type">Flower type:</label>
+                <select id="flower-type">
+                    <option value="🌹">Rose</option>
+                    <option value="🌷">Tulip</option>
+                    <option value="🌼">Daisy</option>
+                    <option value="🌸">Cherry Blossom</option>
+                </select>
+
+                <label for="flower-color">Color:</label>
+                <input type="color" id="flower-color" value="#ff69b4">
+
+                <button id="add-flower">Add Flower</button>
+            </div>
+
+            <div class="bouquet-preview">
+                <h3>Your Bouquet:</h3>
+                <div id="flower-list"></div>
+            </div>
+
+            <div class="message-area">
+                <label for="message">Your message:</label>
+                <textarea id="message" rows="3" placeholder="Write a sweet note..."></textarea>
+            </div>
+
+            <button id="create-bouquet">💌 Create Bouquet & Get Link</button>
+            <div id="result-link" class="hidden">
+                <p>Share this link with your girlfriend:</p>
+                <input type="text" id="share-link" readonly>
+                <button id="copy-link">Copy Link</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

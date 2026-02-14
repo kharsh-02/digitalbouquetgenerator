@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fce4e4, #ffe0f0);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #d44e6c;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.controls label {
+    align-self: center;
+    color: #b34b6b;
+}
+
+#flower-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    min-height: 80px;
+    border: 2px dashed #f9a8d4;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.flower-item {
+    font-size: 2.5rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0); }
+    80% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.message-area {
+    margin: 20px 0;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f9a8d4;
+    border-radius: 10px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+button {
+    background-color: #ff8aae;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ff6f9a;
+}
+
+#result-link {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffe4f3;
+    border-radius: 15px;
+}
+
+#result-link.hidden {
+    display: none;
+}
+
+#share-link {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #f9a8d4;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#bouquet-display {
+    animation: fadeIn 1s;
+}
+
+#flowers {
+    font-size: 3rem;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+#display-message {
+    font-style: italic;
+    color: #b34b6b;
+    font-size: 1.3rem;
+    border-top: 2px solid #f9a8d4;
+    padding-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
